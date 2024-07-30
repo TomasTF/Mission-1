@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusion Sushi Email</title>
+    <link rel="stylesheet" href="Email.css">
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header>
+        <img src="Imagen/Imagen banner.png" alt="Header Image" class="header-image">
+        <p>Peruvian Fusion Sushi</p>
+
+    </header>
+    
+    <!-- NAVIGATION SECTION -->
+     <nav>
+        <a href="Home.html" >Home</a>
+        <a href="Menu" >Menu</a>
+        <a href="AboutUs.html" >About us</a>
+        <a href="Email.html" >Contact</a>
+        
+     </nav>
+
+<!-- contents section -->
+
+        <form action="mailto:tomast@misionreadyhq.com">
+
+            <fieldset>
+
+             <legend>Contact Us</legend>
+            <!-- ===FIRST INPUT FIELD -->
+             <label>Name:</label>
+             <input type="text" name="name" required placeholder="First and Last name..." />
+             <!-- <br/> para dar un espacio -->
+             <br/>
+
+             <!-- SECOND INPUT PIELD -->
+            <label>Email:</label>
+            <input type="email" name="email" style=" color: black;"/>
+            <br/>       
+
+            <!-- RADIO BUTTONS  -->
+
+           <label style="color: black; font-weight: 700;">Select your Order:</label><br/>
+           <input type="radio" id="sales" name="subject"> <label for="sales">Makis</label><br/>
+           <input type="radio" id="support" name="subject"> <label for="support">Sashimi</label><br/>
+           <input type="radio" id="other" name="subject"> <label for="other">Japanesse Fried Rice</label><br/>
+            <br/>
+
+            <!-- MESSAGE (TEXT AREA) -->
+
+            <label>Additional order:</label> <br/>
+            <textarea name="Message"  required placeholder="Please leave a Message"> </textarea>
+
+
+
+            <br/>
+            
+            <!-- SUBMIT BUTTON -->
+            
+             <input type="submit" value="submit" />
+
+            </fieldset>
+            
+
+        </form>
+<!-- FOOTER SECTION -->
+
+<footer>
+    <h3>Copyright 2024 by Tomas Torres, All right reserved</h3>
+</footer>
+       
+    </body>
+
+</html>

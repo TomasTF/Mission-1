@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Lato', 'Helvetica Neue';
+    margin: 0;
+}
+
+
+
+/* ======================= HEADER SECTION============== */
+
+
+header {
+    position: relative;
+    padding: 0px;
+    text-align: center;
+    color: red;
+    font-style: italic;
+    font-size: large;
+        
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    max-height: 230px; /* can change the height dependes the px of the imagen */
+    object-fit: cover;
+}
+
+header h1, header p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+header p {
+    top: 50%;
+    font-size: 2.2em;
+    
+}
+/* ======================= NAV BAR SECTION============== */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    text-align: center;
+
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+
+}
+
+/* ===========main section========== */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+#left {
+    flex-basis: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+#about-me-imgph {
+    background-color: #aaa;
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+}
+
+.imgph {
+    background-color: #aaa;
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+}
+
+
+
+
+#right {
+    flex-basis: 70%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* footer section */
+
+footer {
+    padding: 5px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  media queries */
+
+@media screen and (max-width: 768px){
+    nav, main {
+        flex-direction: column;
+        
+    }
+}
+    
+
+
+@media screen and (max-width: 600px){
+    nav {
+        flex-direction: column;
+        font-size: 12px;
+    }
+}
+    
+/* Nuevo CSS para la imagen con efecto hover */
+.image-container {
+    position: relative;
+    width: 100%; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    text-align: center;
+    padding: 10px;
+}

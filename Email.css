@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Lato', 'Helvetica Neue';
+    margin: 0;
+}
+
+/* ======================= HEADER SECTION============== */
+
+
+header {
+    position: relative;
+    padding: 0px;
+    text-align: center;
+    color: red;
+    font-style: italic;
+    font-size: large;
+        
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    max-height: 230px; /* can change the height dependes the px of the imagen */
+    object-fit: cover;
+}
+
+header h1, header p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+header p {
+    top: 50%;
+    font-size: 2.2em;
+    
+}
+
+/*  NAVIGATION SECTION */
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    text-align: center;
+
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+
+}
+    /* ===== Main Section ===== */
+    
+    nav > ul{
+        display: flex;
+        justify-content: center;
+        margin: 50px 100px; 
+    }
+    
+    .btn {
+        background-color: red;
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    .nav-link {
+        list-style: none;
+        margin: 2px 5px;
+        padding: 8px 15px;
+    }
+    
+    .nav-link:hover {
+        background-color: salmon;
+        color: white;
+        cursor: pointer;
+    }
+
+
+
+
+input {
+    width: 40%;
+}
+
+label {
+    font-family: courier 'Courier New', Courier, monospace;
+    font-family: "Comic Sans MS";
+    color: black;
+}
+/* ==entre input[type] no tiene que haber espacio */
+input[type="text"], input[type="email"] {
+    padding: 2px 2px;
+    margin: 8px 0;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+input[type="radio"] {
+    width: 20px;
+}
+
+textarea {
+    border: 2px solid black;
+}
+
+input[type="submit"] {
+    background-color: black;
+    color: white;
+    width: 30%;
+}
+
+/* example */
+
+input[type="radio"] + label {
+    color: black;
+}
+
+/* ======== Transitions & Animations */
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /* transition: width 2s, height 4s; */
+    /* transition-delay: 1s; */
+    /* transition-timing-function: ease-in-out; */
+    
+    /* ANIMATIONS */
+    position: relative;
+    animation-name: colour-changer;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+
+}
+
+div:hover {
+    width: 200px;
+    height: 200px;
+}
+
+
+/* footer section */
+
+footer {
+    padding: 5px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    
+}
+
+
+
+
+/*  media queries */
+
+@media screen and (max-width: 768px){
+    nav, main {
+        flex-direction: column;
+        
+    }
+}
+    
+
+
+@media screen and (max-width: 600px){
+    nav {
+        flex-direction: column;
+        font-size: 12px;
+    }
+}
